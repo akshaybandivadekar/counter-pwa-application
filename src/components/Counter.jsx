@@ -36,13 +36,13 @@ function Counter(props) {
     }
 
     return(
-        <Box>
+        <Box className="counter-parent-container">
             <h3>Counter Progressive Web App</h3>
             <Stack
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                spacing={12}
+                spacing={0.5}
             >
                 <span className="count-span">{count}</span>
                 <Stack
@@ -50,6 +50,7 @@ function Counter(props) {
                     justifyContent="center"
                     alignItems="center"
                     spacing={0.5}
+                    className="counter-container"
                 >
                     <Button variant="contained" size="large" className="counter-button" onClick={increment} endIcon={<AddCircleIcon />}>
                         Increment
