@@ -19,7 +19,8 @@ code {
   width: 240px;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation:landscape)
+and (max-device-width: 920px) {
   .counter-container {
     flex-direction: row !important;
     align-items: flex-end !important;
